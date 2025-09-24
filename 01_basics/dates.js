@@ -29,6 +29,11 @@ console.log(newDate.getMinutes());
 console.log(newDate.getSeconds());
 console.log(newDate.getMilliseconds());
 
+newDate.toLocaleString('default',{weekday:'long'});
+newDate.toLocaleString('default',{month:'long'});
+newDate.toLocaleString('default',{day:'2-digit'});
+newDate.toLocaleString('default',{year:'numeric'});
+
 
 
 
