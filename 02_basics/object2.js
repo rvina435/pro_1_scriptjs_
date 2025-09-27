@@ -31,3 +31,21 @@ console.log(Object3);
 //another way
 const obj3={...obj1,...obj2}
 console.log(obj3);
+
+const users=[
+    {
+        id:1,email:"ayu@gmail.com"
+    },
+    {
+  name:"ayushi"
+    }
+]
+
+users[1].email
+console.log(tinderuser);
+
+console.log(Object.keys(tinderuser));
+
+console.log(Object.values(tinderuser));
+console.log(Object.entries(tinderuser));
+console.log(tinderuser.hasOwnProperty('isLoggedIn'));
