@@ -36,3 +36,26 @@ function loginuser(username="sam"){
     return `${username} just logged in`
 }
 console.log(loginuser())
+
+
+
+
+
+function calculateCartPrice(val1,val2,...num1){    //rest operator
+    return num1
+
+}
+
+console.log(calculateCartPrice(200,400,500))
+
+
+//passing object into function
+const user={
+    username:"Ayushi",
+    price:111
+}
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price} `);
+
+}
+handleObject(user)
