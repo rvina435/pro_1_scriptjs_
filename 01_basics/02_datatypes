@@ -1,0 +1,21 @@
+"use strict";  //treat all js code as newer version
+// alert(3+3)   we using js not browser
+
+let name="ayushi"
+let age=21
+let isloggedIn=false
+
+//number
+//bigint
+//string
+//boolean
+//null
+//undefined
+//symbol    uniqueeek liye
+
+//object
+
+console.log(typeof"ayush");
+
+console.log(typeof null);
+
