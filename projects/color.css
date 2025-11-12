@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Source Code Pro', monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  transition: background-color 0.4s ease;
+}
+
+.canvas {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #444;
+}
+
+span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #555;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+span:hover {
+  transform: scale(1.1);
+  border: 2px solid #000;
+}
+
+/* color buttons */
+#grey {
+  background-color: grey;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#purple {
+  background-color: purple;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

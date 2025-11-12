@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code</title>
+</head>
+<body style="background-color: black; color: aqua;">
+   <ul class="language">
+      <li>javascript</li>
+   </ul>
+
+<script>
+    // ✅ Way 1: Add list using innerHTML
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("python");
+
+    // ✅ Way 2: More optimized (uses textNode)
+    function addOptimizedLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptimizedLang("golang");
+
+    // ✅ Edit: Replace 1st <li> element
+    const firstLang = document.querySelector("li:first-child");
+    const newLi = document.createElement('li');
+    newLi.textContent = "mojooo";
+    firstLang.replaceWith(newLi);
+
+    // ✅ Another way to edit (using outerHTML)
+    const secondLang = document.querySelector("li:nth-child(2)");
+    secondLang.outerHTML = '<li>typescript</li>';
+
+    // ✅ Remove last element
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+</body>
+</html>
